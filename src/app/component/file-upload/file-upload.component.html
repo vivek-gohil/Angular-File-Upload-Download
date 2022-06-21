@@ -1,0 +1,5 @@
+<input type="file" (change)="selectFile($event)" />
+<button class="btn btn-success btn-sm" [disabled]="!selectedFiles" (click)="upload()">
+    Upload
+</button>
+<div *ngIf="message">{{ message }}</div>
